@@ -1,0 +1,43 @@
+                                   // CS120192108   Mubashar Iftikhar
+
+
+public class TestFile{
+	public static void main(String[] args){
+	
+
+	Paper paper1 = new Paper("Functional English",1,"ENG-112","Sir M Asif","1st","BSCS",new Date
+                   (20,01,2019),new Time(9,0,0),"Final Term","Sir Sanaullah"," Room#06",35,false);
+
+	Paper paper2 = new Paper("ITC",2,"CS-101","Sir SanaUllah","1st","BSCS",new Date(22,01,2020)
+	,new Time(9,0,0),"Final Term","Sir Roman"," Room#06",35,false);
+
+	Paper paper3 = new Paper("Pak Study",3,"PS-101","Sir M Qayyoum","1st","BSCS",
+	new Date(23,01,2019),new Time(9,0,0),"Final Term","Sir Sanaullah","Conference Room",60,false);
+	
+	Paper paper4 = new Paper(" Calculas-1",4,"MATH-101","Sir M Israr","1st","BSCS",new Date(27,01,2019)
+	,new Time(9,0,0),"Final Term","Sir M Asif","Conference Room",58,false);
+
+	Paper paper5 = new Paper("Programming Fundamentals",5,"CS-102","Sir Roman ","1st","BSCS",new Date(28,01,2019)
+	,new Time(1,30,0),"Final Term","Sir Sanaullah","Conference Room",65,false);
+
+                   paper1.setIsCollected(false);
+	paper2.setIsCollected(true);
+	paper3.setIsCollected(false);
+	paper1.setIsCollected(true);
+	paper2.setIsCollected(false);
+	paper3.setIsCollected(true);
+
+	Course course1 = new Course("Computer Science","ENG-112","Fall 2019",paper1);
+	Course course2 = new Course("Computer Science","CS-101","Fall 2019",paper2);
+                   Course course3 = new Course("Computer Science","PS-101","Fall 2019",paper3);
+                   Course course4 = new Course("Computer Science","MATH-101","Fall 2019",paper4);
+	Course course5 = new Course("Computer Science","CS-102","Fall 2019",paper5);
+
+	System.out.println(course1);
+	System.out.println(course2);
+	System.out.println(course3);
+	System.out.println(course4);
+	System.out.println(course5);
+
+	}
+}
